@@ -239,43 +239,139 @@ export function DealsPage() {
             <div className="figma-deals-empty-illustration">
               <img src='./images/EmptyDeals.png' alt="Empty Deals" />
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" className='searchsvg' width="72" height="71" viewBox="0 0 72 71" fill="none">
-              <path d="M28.2609 55.7017C43.4547 55.7017 55.7717 43.4004 55.7717 28.2259C55.7717 13.0514 43.4547 0.75 28.2609 0.75C13.067 0.75 0.75 13.0514 0.75 28.2259C0.75 43.4004 13.067 55.7017 28.2609 55.7017Z" fill="url(#paint0_linear_2_18402)" stroke="url(#paint1_linear_2_18402)" stroke-width="1.5" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.7844 49.959C25.2232 50.2278 26.687 50.3675 28.1759 50.3781C40.1493 50.3781 49.8557 40.5548 49.8557 28.4371C49.8557 16.3194 40.1493 6.49609 28.1759 6.49609C25.1001 6.49609 22.1739 7.14433 19.5235 8.31317C14.9175 10.3444 11.1442 13.9477 8.86532 18.4534C7.35061 21.4482 6.49609 24.8417 6.49609 28.4371C6.49609 31.6993 7.19954 34.7952 8.4613 37.5779C9.3621 39.5645 10.5475 41.3916 11.9646 43.0056" fill="#19104E" />
-              <path d="M23.7844 49.959C25.2232 50.2278 26.687 50.3675 28.1759 50.3781C40.1493 50.3781 49.8557 40.5548 49.8557 28.4371C49.8557 16.3194 40.1493 6.49609 28.1759 6.49609C25.1001 6.49609 22.1739 7.14433 19.5235 8.31317C14.9175 10.3444 11.1442 13.9477 8.86532 18.4534C7.35061 21.4482 6.49609 24.8417 6.49609 28.4371C6.49609 31.6993 7.19954 34.7952 8.4613 37.5779C9.3621 39.5645 10.5475 41.3916 11.9646 43.0056" stroke="url(#paint2_linear_2_18402)" stroke-width="1.5" stroke-linecap="round" />
-              <path d="M14.4219 44.9023C16.186 46.3344 18.1789 47.496 20.3375 48.324" stroke="url(#paint3_linear_2_18402)" stroke-width="1.5" stroke-linecap="round" />
-              <path d="M50.7207 49.7617L55.648 54.6828" stroke="#6654CE" stroke-width="1.5" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M54.8513 53.8869C53.297 55.4393 53.297 57.9562 54.8513 59.5085L63.9548 68.6004C65.5091 70.1528 68.0292 70.1528 69.5835 68.6004C71.1378 67.048 71.1378 64.5312 69.5835 62.9788L60.48 53.8869C58.9257 52.3346 56.4056 52.3346 54.8513 53.8869Z" fill="url(#paint4_linear_2_18402)" stroke="url(#paint5_linear_2_18402)" stroke-width="1.5" />
-              <path d="M58.9336 55.5039L67.967 64.5258" stroke="#6746FF" stroke-width="1.5" stroke-linecap="round" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9473 18.5699C23.9473 28.0823 31.6684 35.7936 41.1929 35.7936C43.0639 35.7936 44.8653 35.496 46.5523 34.9457C43.7987 41.7703 37.1053 46.5877 29.2852 46.5877C19.0075 46.5877 10.6758 38.2665 10.6758 28.0019C10.6758 18.7008 17.5168 10.9954 26.4479 9.63086C24.8612 12.2376 23.9473 15.2971 23.9473 18.5699Z" fill="white" fill-opacity="0.05" />
-              <path d="M28.5485 12.8535C27.5028 12.8535 26.4811 12.9563 25.4929 13.1522M22.5082 14.0642C16.8903 16.422 12.9453 21.9693 12.9453 28.4368" stroke="#6746FF" stroke-width="1.5" stroke-linecap="round" />
-              <defs>
-                <linearGradient id="paint0_linear_2_18402" x1="28.2609" y1="-21.2537" x2="33.5236" y2="57.6294" gradientUnits="userSpaceOnUse">
-                  <stop offset="0.160779" stop-color="#C2FF0A" />
-                  <stop offset="1" stop-color="#3B18DE" />
-                </linearGradient>
-                <linearGradient id="paint1_linear_2_18402" x1="28.2609" y1="0.75" x2="28.2609" y2="55.7017" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#C2FF0A" />
-                  <stop offset="1" stop-color="#4E28FF" />
-                </linearGradient>
-                <linearGradient id="paint2_linear_2_18402" x1="28.1759" y1="6.49609" x2="28.1759" y2="50.3781" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#C2FF0A" />
-                  <stop offset="1" stop-color="#2D00FF" />
-                </linearGradient>
-                <linearGradient id="paint3_linear_2_18402" x1="14.3334" y1="44.6321" x2="20.8634" y2="48.8113" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#634DD5" />
-                  <stop offset="1" stop-color="#502CFB" />
-                </linearGradient>
-                <linearGradient id="paint4_linear_2_18402" x1="59.2585" y1="43.064" x2="62.393" y2="67.8782" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#C2FF0A" />
-                  <stop offset="1" stop-color="#3B18DE" />
-                </linearGradient>
-                <linearGradient id="paint5_linear_2_18402" x1="58.4749" y1="46.7208" x2="62.2174" y2="69.7647" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#C2FF0A" />
-                  <stop offset="1" stop-color="#4E28FF" />
-                </linearGradient>
-              </defs>
-            </svg>
+                <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="searchsvg"
+      width="72"
+      height="71"
+      viewBox="0 0 72 71"
+      fill="none"
+    >
+      <path
+        d="M28.2609 55.7017C43.4547 55.7017 55.7717 43.4004 55.7717 28.2259C55.7717 13.0514 43.4547 0.75 28.2609 0.75C13.067 0.75 0.75 13.0514 0.75 28.2259C0.75 43.4004 13.067 55.7017 28.2609 55.7017Z"
+        fill="url(#paint0_linear_2_18402)"
+        stroke="url(#paint1_linear_2_18402)"
+        strokeWidth="1.5"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M23.7844 49.959C25.2232 50.2278 26.687 50.3675 28.1759 50.3781C40.1493 50.3781 49.8557 40.5548 49.8557 28.4371C49.8557 16.3194 40.1493 6.49609 28.1759 6.49609C25.1001 6.49609 22.1739 7.14433 19.5235 8.31317C14.9175 10.3444 11.1442 13.9477 8.86532 18.4534C7.35061 21.4482 6.49609 24.8417 6.49609 28.4371C6.49609 31.6993 7.19954 34.7952 8.4613 37.5779C9.3621 39.5645 10.5475 41.3916 11.9646 43.0056"
+        fill="#19104E"
+      />
+      <path
+        d="M23.7844 49.959C25.2232 50.2278 26.687 50.3675 28.1759 50.3781C40.1493 50.3781 49.8557 40.5548 49.8557 28.4371C49.8557 16.3194 40.1493 6.49609 28.1759 6.49609C25.1001 6.49609 22.1739 7.14433 19.5235 8.31317C14.9175 10.3444 11.1442 13.9477 8.86532 18.4534C7.35061 21.4482 6.49609 24.8417 6.49609 28.4371C6.49609 31.6993 7.19954 34.7952 8.4613 37.5779C9.3621 39.5645 10.5475 41.3916 11.9646 43.0056"
+        stroke="url(#paint2_linear_2_18402)"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M14.4219 44.9023C16.186 46.3344 18.1789 47.496 20.3375 48.324"
+        stroke="url(#paint3_linear_2_18402)"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M50.7207 49.7617L55.648 54.6828"
+        stroke="#6654CE"
+        strokeWidth="1.5"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M54.8513 53.8869C53.297 55.4393 53.297 57.9562 54.8513 59.5085L63.9548 68.6004C65.5091 70.1528 68.0292 70.1528 69.5835 68.6004C71.1378 67.048 71.1378 64.5312 69.5835 62.9788L60.48 53.8869C58.9257 52.3346 56.4056 52.3346 54.8513 53.8869Z"
+        fill="url(#paint4_linear_2_18402)"
+        stroke="url(#paint5_linear_2_18402)"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M58.9336 55.5039L67.967 64.5258"
+        stroke="#6746FF"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M23.9473 18.5699C23.9473 28.0823 31.6684 35.7936 41.1929 35.7936C43.0639 35.7936 44.8653 35.496 46.5523 34.9457C43.7987 41.7703 37.1053 46.5877 29.2852 46.5877C19.0075 46.5877 10.6758 38.2665 10.6758 28.0019C10.6758 18.7008 17.5168 10.9954 26.4479 9.63086C24.8612 12.2376 23.9473 15.2971 23.9473 18.5699Z"
+        fill="white"
+        fillOpacity="0.05"
+      />
+      <path
+        d="M28.5485 12.8535C27.5028 12.8535 26.4811 12.9563 25.4929 13.1522M22.5082 14.0642C16.8903 16.422 12.9453 21.9693 12.9453 28.4368"
+        stroke="#6746FF"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_2_18402"
+          x1="28.2609"
+          y1="-21.2537"
+          x2="33.5236"
+          y2="57.6294"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0.160779" stopColor="#C2FF0A" />
+          <stop offset="1" stopColor="#3B18DE" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_2_18402"
+          x1="28.2609"
+          y1="0.75"
+          x2="28.2609"
+          y2="55.7017"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#C2FF0A" />
+          <stop offset="1" stopColor="#4E28FF" />
+        </linearGradient>
+        <linearGradient
+          id="paint2_linear_2_18402"
+          x1="28.1759"
+          y1="6.49609"
+          x2="28.1759"
+          y2="50.3781"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#C2FF0A" />
+          <stop offset="1" stopColor="#2D00FF" />
+        </linearGradient>
+        <linearGradient
+          id="paint3_linear_2_18402"
+          x1="14.3334"
+          y1="44.6321"
+          x2="20.8634"
+          y2="48.8113"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#634DD5" />
+          <stop offset="1" stopColor="#502CFB" />
+        </linearGradient>
+        <linearGradient
+          id="paint4_linear_2_18402"
+          x1="59.2585"
+          y1="43.064"
+          x2="62.393"
+          y2="67.8782"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#C2FF0A" />
+          <stop offset="1" stopColor="#3B18DE" />
+        </linearGradient>
+        <linearGradient
+          id="paint5_linear_2_18402"
+          x1="58.4749"
+          y1="46.7208"
+          x2="62.2174"
+          y2="69.7647"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#C2FF0A" />
+          <stop offset="1" stopColor="#4E28FF" />
+        </linearGradient>
+      </defs>
+    </svg>
           </div>
           <div className="figma-deals-empty-text">
             <h3>No deals yet</h3>

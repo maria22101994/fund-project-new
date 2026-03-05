@@ -29,7 +29,7 @@ const handleContinue = () => {
         {/* Content */}
         <div className="figma-nokyc-detail-content">
           {/* Illustration */}
-          <img src="./images/EmptyVisa.png" />
+          <img src="/images/EmptyVisa.png" />
 
           {/* Title */}
           <div className="figma-nokyc-detail-header">
@@ -47,7 +47,7 @@ const handleContinue = () => {
               <div key={index}> {/* Use a div with a key if you don't want to import React */}
                 <div className="figma-nokyc-detail-benefit">
                   <div className="figma-nokyc-detail-benefit-icon">
-                    <img src="./images/Iocn.svg" alt="icon" />
+                    <img src="/images/Iocn.svg" alt="icon" />
                   </div>
                   <span className="figma-nokyc-detail-benefit-text">{benefit}</span>
                 </div>

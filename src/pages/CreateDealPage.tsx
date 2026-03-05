@@ -603,7 +603,7 @@ export function CreateDealPage() {
                   <InfoIcon />
                 </span>
                 <span className="figma-create-deal-fee-value">
-                  {`${escrowFee.toFixed(0)} ${displayCurrency}`}
+                  {escrowFee.toFixed(2)} {displayCurrency}
                 </span>
               </div>
 
@@ -792,7 +792,7 @@ export function CreateDealPage() {
                 <InfoIcon />
               </span>
               <span className="figma-create-deal-summary-value">
-                {escrowFee.toFixed(0)} {displayCurrency}
+                {escrowFee.toFixed(2)} {displayCurrency}
               </span>
             </div>
             <div className="figma-create-deal-summary-row">
@@ -947,7 +947,7 @@ export function CreateDealPage() {
                     <InfoIcon />
                   </span>
                   <span className="figma-create-deal-summary-value">
-                    {`${escrowFee.toFixed(0)} ${displayCurrency}`}
+                    {escrowFee.toFixed(2)} {displayCurrency}
                   </span>
                 </div>
 
@@ -1149,7 +1149,7 @@ export function CreateDealPage() {
                     <InfoIcon />
                   </span>
                   <span className="figma-create-deal-summary-value">
-                    {`${escrowFee.toFixed(0)} ${displayCurrency}`}
+                    {escrowFee.toFixed(2)} {displayCurrency}
                   </span>
                 </div>
 
@@ -1312,7 +1312,7 @@ export function CreateDealPage() {
                 <InfoIcon />
               </span>
               <span className="figma-create-deal-fee-value">
-                {`${escrowFee.toFixed(0)} ${displayCurrency}`}
+                {escrowFee.toFixed(2)} {displayCurrency}
               </span>
             </div>
 

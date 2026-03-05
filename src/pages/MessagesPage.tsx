@@ -128,7 +128,7 @@ export function MessagesPage() {
             As buyer
             {unreadBuyerCount > 0 && (
               <span className="figma-messages-tab-badge">{unreadBuyerCount}</span>
-            )} 
+            )}
           </button>
           <button
             className={`figma-messages-tab ${roleFilter === 'seller' ? 'figma-messages-tab--active' : ''}`}
@@ -204,16 +204,34 @@ export function MessagesPage() {
                 <div className="figma-messages-item-meta">
                   <div className="figma-messages-item-time-row">
                     {chat.isRead && chat.unreadCount === 0 && (
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path d="M1.45703 8.06877L3.4987 10.2077L4.09604 9.58188M9.6237 3.79102L6.08695 7.49617" stroke="#BFED33" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M4.375 8.06877L6.41667 10.2077L12.5417 3.79102" stroke="#BFED33" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                      >
+                        <path
+                          d="M1.45703 8.06877L3.4987 10.2077L4.09604 9.58188M9.6237 3.79102L6.08695 7.49617"
+                          stroke="#BFED33"
+                          strokeWidth="0.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M4.375 8.06877L6.41667 10.2077L12.5417 3.79102"
+                          stroke="#BFED33"
+                          strokeWidth="0.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     )}
                     <span className="figma-messages-item-time">{chat.lastMessageTime}</span>
                   </div>
                   {chat.unreadCount > 0 && (
                     <div className="figma-messages-tab-badge">{chat.unreadCount}</div>
-                   )} 
+                  )}
                 </div>
               </div>
               {index < filteredChats.length - 1 && (

@@ -860,7 +860,7 @@ export function DealDetailPage() {
                   <div className="figma-create-deal-summary-row">
                     <span className="figma-create-deal-summary-label">Seller receives</span>
                     <span className="figma-create-deal-summary-value">
-                      {parseFloat(deal.amount).toFixed(2)} {displayCurrency}
+                     {Number(deal.amount).toFixed(2)} {displayCurrency}
                     </span>
                   </div>
                   <div className="figma-create-deal-fee-row deal-row">
@@ -871,7 +871,7 @@ export function DealDetailPage() {
                       <InfoIcon />
                     </span>
                     <span className="figma-create-deal-summary-value">
-                      {(parseFloat(deal.amount) * 0.05).toFixed(2)} {displayCurrency}
+                     {(Number(deal.amount) * 0.05).toFixed(2)} {displayCurrency}
                     </span>
                   </div>
                   <div className="figma-create-deal-fee-row network-space">
@@ -888,7 +888,7 @@ export function DealDetailPage() {
                   <div className="figma-create-deal-fee-row main">
                     <span className="figma-create-deal-fee-label">Total</span>
                     <span className="figma-create-deal-summary-value">
-                      {parseFloat(deal.totalAmount || deal.amount).toFixed(2)} {displayCurrency}
+                      {(Number(deal.amount) * 1.05).toFixed(2)} {displayCurrency}
                     </span>
                   </div>
                   <button className="figma-seller-expand-btn left-aligned" onClick={() => setShowTerms(false)}>
@@ -914,7 +914,7 @@ export function DealDetailPage() {
                       <InfoIcon />
                     </span>
                     <span className="figma-create-deal-summary-value">
-                      {parseFloat(deal.feeAmount || '0').toFixed(2)}
+                      {(Number(deal.amount) * 0.05).toFixed(2)} {displayCurrency}
                     </span>
                   </div>
                   <div className="figma-create-deal-summary-divider" />
@@ -922,7 +922,7 @@ export function DealDetailPage() {
                   <div className="figma-create-deal-fee-row main">
                     <span className="figma-create-deal-fee-label">Total</span>
                     <span className="figma-create-deal-summary-value">
-                      {parseFloat(deal.totalAmount || deal.amount).toFixed(2)} {displayCurrency}
+                     {(Number(deal.amount) * 1.05).toFixed(2)} {displayCurrency}
                     </span>
                   </div>
                   <button className="figma-seller-expand-btn left-aligned" onClick={() => setShowTerms(false)}>
@@ -1419,9 +1419,9 @@ export function DealDetailPage() {
                   <div className="dispute-open-divider" />
 
                   <div className="dispute-open-row">
-                    <span className="figma-create-deal-summary-label">Seller receives</span>
-                    <span className="dispute-open-value">{parseFloat(deal.amount).toLocaleString()} {displayCurrency}</span>
-                  </div>
+      <span className="figma-create-deal-summary-label">Seller receives</span>
+      <span className="dispute-open-value">{Number(deal.amount).toFixed(2)} {displayCurrency}</span>
+    </div>
                   <div className="dispute-open-row">
                     <span className="dispute-open-label with-icon">
                       <span className="underline-deal-text"> Network fee (est.)</span>
@@ -1456,13 +1456,12 @@ export function DealDetailPage() {
                         </defs>
                       </svg>
                     </span>
-                    <span className="dispute-open-value">{deal.feeAmount || (parseFloat(deal.amount) * 0.05).toFixed(2)} {displayCurrency}</span>
-                  </div>
+<span className="dispute-open-value">{(Number(deal.amount) * 0.05).toFixed(2)} {displayCurrency}</span>                  </div>
                   <div className="figma-create-deal-summary-divider" />
 
                   <div className="dispute-open-row">
                     <span className="dispute-open-label">Total</span>
-                    <span className="dispute-open-value highlight">{deal.totalAmount || (parseFloat(deal.amount) * 1.05 + 1).toFixed(2)} {displayCurrency}</span>
+                    <span className="dispute-open-value highlight">{(Number(deal.amount) * 1.05).toFixed(2)} {displayCurrency}</span>
                   </div>
                 </>
               )}

@@ -67,7 +67,7 @@ const TrustIcon = () => (
 
 // Green checkmark icon - Figma exact
 const CheckIcon = () => (
-  <img src="./images/Iocn.svg" alt="icon" />
+  <img src="/images/Iocn.svg" alt="icon" />
 );
 
 // Bullet point (lime dot)

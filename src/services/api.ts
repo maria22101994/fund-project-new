@@ -496,7 +496,7 @@ class ApiClient {
         USDT_TRC20: 'TRC20',
         BTC: 'Bitcoin',
         ETH: 'ERC20',
-        LTC: 'Litecoin',
+        // LTC: 'Litecoin',
       };
       return {
         address: 'TYDzsYUEpvnYmQk4zGP9sWWcTEd2MiAtW7',

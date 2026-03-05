@@ -30,19 +30,19 @@ const CoinEth = () => (
   </svg>
 );
 
-const CoinLtc = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-    <circle cx="16" cy="16" r="16" fill="#345D9D" />
-    <path d="M16.2 7l-1.1 6.9-3.1 1.2.4 1.7 2.6-1-1.8 7.2h11.3l.7-2.8h-7.5l1.2-4.7 3.1-1.2-.4-1.7-2.6 1L20.1 7h-3.9z" fill="white" />
-  </svg>
-);
+// const CoinLtc = () => (
+//   <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+//     <circle cx="16" cy="16" r="16" fill="#345D9D" />
+//     <path d="M16.2 7l-1.1 6.9-3.1 1.2.4 1.7 2.6-1-1.8 7.2h11.3l.7-2.8h-7.5l1.2-4.7 3.1-1.2-.4-1.7-2.6 1L20.1 7h-3.9z" fill="white" />
+//   </svg>
+// );
 
 const CURRENCY_INFO: Record<string, { icon: React.ReactNode; name: string; fullName: string }> = {
   USDT: { icon: <CoinUsdt />, name: 'USDT', fullName: 'TetherUS' },
   USDT_TRC20: { icon: <CoinUsdt />, name: 'USDT', fullName: 'TetherUS' },
   BTC: { icon: <CoinBtc />, name: 'BTC', fullName: 'Bitcoin' },
   ETH: { icon: <CoinEth />, name: 'ETH', fullName: 'Ethereum' },
-  LTC: { icon: <CoinLtc />, name: 'LTC', fullName: 'Litecoin' },
+  // LTC: { icon: <CoinLtc />, name: 'LTC', fullName: 'Litecoin' },
 };
 
 export function WalletPage() {
@@ -50,7 +50,7 @@ export function WalletPage() {
   const { balances, fetchBalances, isLoading } = useWalletStore();
 
   const [prices, setPrices] = useState<Record<string, number>>({
-    USDT: 1, BTC: 100000, ETH: 3300, LTC: 100,
+    USDT: 1, BTC: 100000, ETH: 3300
   });
 
   const [showWithdrawModal, setShowWithdrawModal] = useState(false);
@@ -70,7 +70,8 @@ const handleSelectMethod = (method: 'nokyc' | 'bank' | 'onchain') => {
 
   if (method === 'nokyc') {
     if (isCardUnlocked) {
-      navigate('/off-ramp-addresses');
+      // Pass the selected currency as a query param
+      navigate(`/off-ramp-addresses?currency=${selectedCurrency}`);
     } else {
       setShowNoKycModal(true);
     }
@@ -78,13 +79,12 @@ const handleSelectMethod = (method: 'nokyc' | 'bank' | 'onchain') => {
   }
 
   if (method === 'bank') {
-    navigate('/withdraw'); 
+    navigate(`/withdraw?currency=${selectedCurrency}`); 
   } else if (method === 'onchain') {
-    // FIX: Uncomment and use the selectedCurrency state here
-    navigate(`/withdraw?currency=${selectedCurrency}`);
+    // Reading selectedCurrency here fixes the TS6133 error
+    navigate(`/off-ramp-addresses?currency=${selectedCurrency}`);
   }
 };
-
   const handleLearnMore = () => {
     setShowWithdrawModal(false);
     setShowNoKycModal(true);
@@ -107,7 +107,7 @@ const handleSelectMethod = (method: 'nokyc' | 'bank' | 'onchain') => {
             USDT: data.tether?.usd || 1,
             BTC: data.bitcoin?.usd || 100000,
             ETH: data.ethereum?.usd || 3300,
-            LTC: data.litecoin?.usd || 100,
+            // LTC: data.litecoin?.usd || 100,
           });
         }
       } catch (err) { console.error(err); }
@@ -131,11 +131,11 @@ const handleSelectMethod = (method: 'nokyc' | 'bank' | 'onchain') => {
     if (b.currency === 'USDT' || b.currency === 'USDT_TRC20') return acc + amount;
     if (b.currency === 'BTC') return acc + amount * prices.BTC;
     if (b.currency === 'ETH') return acc + amount * prices.ETH;
-    if (b.currency === 'LTC') return acc + amount * prices.LTC;
+    // if (b.currency === 'LTC') return acc + amount * prices.LTC;
     return acc;
   }, 0);
 
-  const currencies = ['USDT', 'BTC', 'ETH', 'LTC'];
+  const currencies = ['USDT', 'BTC', 'ETH'];
 
   return (
     <div className="figma-wallet">

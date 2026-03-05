@@ -137,7 +137,7 @@ export function AddressBookPage() {
                 </svg>
 
                 {/* Dynamic Image based on Step */}
-                <img src="./images/emptyoff.png" alt="Onboarding Phase" className="figma-nokyc-main-img" />
+                <img src="/images/emptyoff.png" alt="Onboarding Phase" className="figma-nokyc-main-img" />
               </div>
               <h3 className="figma-addressbook-empty-title">Your Address Book is empty</h3>
               <p className="figma-addressbook-empty-desc">

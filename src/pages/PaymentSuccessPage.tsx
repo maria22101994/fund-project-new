@@ -48,7 +48,7 @@ export function PaymentSuccessPage() {
         </svg>
 
         {/* Dynamic Image based on Step */}
-        <img src="./images/payment_rec.png" alt="Onboarding Phase" className="figma-nokyc-main-img" />
+        <img src="/images/payment_rec.png" alt="Onboarding Phase" className="figma-nokyc-main-img" />
       </div>
     </div>
 

@@ -1122,7 +1122,7 @@ if (kycStep === 'sell' || searchParams.get('currency')) {
                       border: selectedMethod1 === 'bank' ? '1px solid #c5ff00' : '1px solid rgba(255,255,255,0.05)',
                     }}>
                     <div style={{ background: 'white', padding: '4px 8px', borderRadius: '4px', height: '24px', display: 'flex', alignItems: 'center' }}>
-                      <img src="./images/manual.png" alt="SEPA" style={{ width: '40px' }} />
+                      <img src="/images/manual.png" alt="SEPA" style={{ width: '40px' }} />
                     </div>
                     <span style={{ fontSize: '14px', fontWeight: '500', flex: 1 }}>Manual bank Transfer</span>
                     <div style={{
@@ -1150,7 +1150,7 @@ if (kycStep === 'sell' || searchParams.get('currency')) {
                       border: selectedMethod1 === 'visa' ? '1px solid #c5ff00' : '1px solid rgba(255,255,255,0.05)',
                     }}>
                     <div style={{ background: 'white', padding: '4px', borderRadius: '4px', height: '24px', display: 'flex', alignItems: 'center' }}>
-                      <img src="./images/visacard.png" alt="Visa" style={{ width: '30px' }} />
+                      <img src="/images/visacard.png" alt="Visa" style={{ width: '30px' }} />
                     </div>
                     <span style={{ fontSize: '14px', fontWeight: '500' }}>Visa</span>
                     <div style={{
@@ -1293,7 +1293,7 @@ if (kycStep === 'sell' || searchParams.get('currency')) {
                 </svg>
               </button>
             </div>
-            <img src="./images/transek.png" alt="Transak" style={{ width: 80, height: 80, objectFit: 'contain' }} />
+            <img src="/images/transek.png" alt="Transak" style={{ width: 80, height: 80, objectFit: 'contain' }} />
           </div>
         </div>
 

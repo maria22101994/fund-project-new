@@ -68,7 +68,7 @@ export const DEAL_STATUSES = {
 export const MIN_DEAL_AMOUNT = 100; // USD equivalent (backend: min_deal_amount_usd)
 export const MAX_DEAL_AMOUNT = 100000; // USD equivalent
 export const ESCROW_FEE_PERCENT = 5.0; // Backend: default_fee_percentage
-export const MIN_FEE_AMOUNT = 25; // USD minimum fee (backend: min_fee_amount_usd)
+export const MIN_FEE_AMOUNT = 1; // USD minimum fee (backend: min_fee_amount_usd)
 export const MIN_OFFRAMP_AMOUNT = 50; // USD equivalent
 
 // Tiered fee structure (volume-based discounts)

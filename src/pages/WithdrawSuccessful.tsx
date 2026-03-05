@@ -45,7 +45,7 @@ export function WithdrawSuccess() {
         </svg>
 
         {/* Dynamic Image based on Step */}
-        <img src="./images/withdrawsuccess.png" alt="Onboarding Phase" className="figma-nokyc-main-img" />
+        <img src="/images/withdrawsuccess.png" alt="Onboarding Phase" className="figma-nokyc-main-img" />
       </div>
     </div>
 

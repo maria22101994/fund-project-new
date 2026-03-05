@@ -63,7 +63,7 @@ const SearchIllustration = () => (
           </filter>
         </defs>
       </svg>
-      <img src="./images/emptyoff.png" alt="Empty" className="figma-nokyc-main-img" />
+      <img src="/images/emptyoff.png" alt="Empty" className="figma-nokyc-main-img" />
     </div>
   </div>
 );

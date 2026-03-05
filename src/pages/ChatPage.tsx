@@ -311,10 +311,34 @@ export function ChatPage() {
                       <span className="figma-chat-message-time">{formatTime(msg.createdAt)}</span>
                       {isOwn && (
                         <span className="figma-chat-message-read">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                            <path d="M1.45703 8.06877L3.4987 10.2077L4.09604 9.58188M9.6237 3.79102L6.08695 7.49617" stroke="#BFED33" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />
-                            {msg.isRead && <path d="M4.375 8.06877L6.41667 10.2077L12.5417 3.79102" stroke="#BFED33" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" />}
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                          >
+                            {/* First Checkmark (Partial) */}
+                            <path
+                              d="M1.45703 8.06877L3.4987 10.2077L4.09604 9.58188M9.6237 3.79102L6.08695 7.49617"
+                              stroke="#BFED33"
+                              strokeWidth={0.8}
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+
+                            {/* Second Checkmark (Full) - Only shows when read */}
+                            {msg.isRead &&
+                              <path
+                                d="M4.375 8.06877L6.41667 10.2077L12.5417 3.79102"
+                                stroke="#BFED33"
+                                strokeWidth={0.8}
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            }
                           </svg>
+
                         </span>
                       )}
                     </div>
@@ -498,8 +522,8 @@ export function ChatPage() {
               Cancel
             </button>
             <div className="figma-home-indicator">
-            <div className="figma-home-indicator-bar-specific" />
-          </div>
+              <div className="figma-home-indicator-bar-specific" />
+            </div>
           </div>
 
         </>
